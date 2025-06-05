@@ -1,0 +1,52 @@
+
+
+body {
+    font-family: 'Georgia', sans-serif !important;
+}
+
+.cs-w-logo {
+    width: 90px !important;
+}
+
+.cs-transition {
+    transition: .5s !important;
+}
+
+/*Backgrounds*/
+.cs-bg-navbar {
+    background-color:#ffffffdc !important;
+}
+
+.cs-bg-one {
+    background-color: #201445 !important;
+}
+
+.cs-bg-two {
+    background-color: #f5efeb !important;
+}
+
+.cs-bg-badge {
+    background-color: #f5efeb !important;
+}
+
+/*Font*/
+.cs-tc-one {
+    color: #b49d8e !important;
+}
+
+.cs-tc-two {
+    color: #9484c6 !important;
+}
+
+/*Buttons*/
+.cs-btn {
+    background-color: #4b2aad !important;
+}
+
+.cs-btn:hover {
+    background-color: #9484c6 !important;
+}
+
+.cs-link:hover {
+    color: #4b2aad !important;
+}
