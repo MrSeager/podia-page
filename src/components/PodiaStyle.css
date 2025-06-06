@@ -47,6 +47,14 @@ body {
     background-color: #9484c6 !important;
 }
 
-.cs-link:hover {
+.cs-link {
+    color: #201445 !important;
+}
+
+.cs-link-two {
+    color: #b49d8e !important;    
+}
+
+.cs-link:hover, .cs-link-two:hover {
     color: #4b2aad !important;
 }

@@ -9,16 +9,14 @@ import SectorFour from './SectorFour.tsx';
 import SectorFooter from './SectorFooter.tsx';
 //Bootstrap
 import 'bootstrap/dist/css/bootstrap.css';
-import { Container, Nav } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
 //Spring
 import { useSpring, animated } from '@react-spring/web';
-//Images
-import DesktopImg from '../images/free-photo-of-minimalist-setup-office.jpeg';
 
 const PodiaPage: FC = () => {
     return (
         <Container fluid className='min-vh-100 px-0'>
-            <Container className='pb-5 d-flex flex-column align-items-center gap-3'>
+            <Container className='mt-5 pb-5 d-flex flex-column align-items-center gap-3'>
                 <PodiaNavbar />
                 <SectorOne />
                 <SectorTwo />
