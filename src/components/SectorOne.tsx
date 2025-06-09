@@ -1,8 +1,11 @@
 import { FC } from 'react';
 //Bootstrap
-import { Container, Row, Col, Button, Image } from 'react-bootstrap';
+import { Container, Row, Col, Button, Image, Carousel } from 'react-bootstrap';
 //Images
-import DesktopImg from '../images/free-photo-of-minimalist-setup-office.jpeg';
+import ImgOne from '../images/free-photo-of-minimalist-setup-office.jpeg';
+import ImgTwo from '../images/pexels-ben-collins-41034267-7292641.jpg';
+import ImgThree from '../images/pexels-drew-williams-1285451-3143813.jpg';
+import ImgFour from '../images/pexels-knownasovan-57690.jpg';
 
 const SectorOne: FC = () => {
     return (
@@ -23,8 +26,21 @@ const SectorOne: FC = () => {
                         Get your free account
                     </Button>
                 </Col>
-                <Col lg={{ span: 6, order: 2 }} xs={{ span: 12, order: 1 }} className='p-4'>
-                    <Image fluid src={DesktopImg} alt='image' className='rounded rounded-3' />
+                <Col lg={{ span: 6, order: 2 }} xs={{ span: 12, order: 1 }} className='p-4 d-flex flex-column align-items-center justify-content-center'>
+                    <Carousel interval={2000} controls={false} indicators={false}>
+                        <Carousel.Item>
+                            <Image fluid src={ImgOne} alt='image' className='rounded rounded-3' />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image fluid src={ImgTwo} alt='image' className='rounded rounded-3' />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image fluid src={ImgThree} alt='image' className='rounded rounded-3' />
+                        </Carousel.Item>
+                        <Carousel.Item>
+                            <Image fluid src={ImgFour} alt='image' className='rounded rounded-3' />
+                        </Carousel.Item>
+                    </Carousel>
                 </Col>
             </Row>
         </Container>

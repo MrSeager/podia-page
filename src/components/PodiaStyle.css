@@ -12,6 +12,12 @@ body {
     transition: .5s !important;
 }
 
+.cs-carousel-image {
+  width: 100% !important;
+  height: 400px !important; /* Set a fixed height */
+  object-fit: cover !important; /* Ensures images fill the space nicely */
+}
+
 /*Backgrounds*/
 .cs-bg-navbar {
     background-color:#ffffffdc !important;
