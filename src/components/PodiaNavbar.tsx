@@ -19,11 +19,11 @@ const PodiaNavbar: FC = () => {
                         <Dropdown className='mx-lg-2 mx-0'>
                             <Dropdown.Toggle className='border-0 bg-transparent text-dark px-0 pt-2 cs-transition cs-link'>Feature</Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#action/1.1" className='cs-transition cs-link'>Online courses</Dropdown.Item>
-                                <Dropdown.Item href="#action/1.2" className='cs-transition cs-link'>Downloads</Dropdown.Item>
-                                <Dropdown.Item href="#action/1.3" className='cs-transition cs-link'>Webinars</Dropdown.Item>
-                                <Dropdown.Item href="#action/1.4" className='cs-transition cs-link'>Coaching</Dropdown.Item>
-                                <Dropdown.Item href="#action/1.5" className='cs-transition cs-link'>Email marketing</Dropdown.Item>
+                                <Dropdown.Item href="#action/1.1" className='cs-transition cs-link bg-transparent'>Online courses</Dropdown.Item>
+                                <Dropdown.Item href="#action/1.2" className='cs-transition cs-link bg-transparent'>Downloads</Dropdown.Item>
+                                <Dropdown.Item href="#action/1.3" className='cs-transition cs-link bg-transparent'>Webinars</Dropdown.Item>
+                                <Dropdown.Item href="#action/1.4" className='cs-transition cs-link bg-transparent'>Coaching</Dropdown.Item>
+                                <Dropdown.Item href="#action/1.5" className='cs-transition cs-link bg-transparent'>Email marketing</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                         <Nav.Link href='#' className='cs-transition cs-link'>Examples</Nav.Link>
@@ -32,10 +32,10 @@ const PodiaNavbar: FC = () => {
                         <Dropdown className='mx-lg-2 mx-0'>
                             <Dropdown.Toggle className='border-0 bg-transparent text-dark px-0 pt-2 cs-transition cs-link'>Resources</Dropdown.Toggle>
                             <Dropdown.Menu>
-                                <Dropdown.Item href="#action/1.1" className='cs-transition cs-link'>Examples</Dropdown.Item>
-                                <Dropdown.Item href="#action/1.2" className='cs-transition cs-link'>Creator stories</Dropdown.Item>
-                                <Dropdown.Item href="#action/1.3" className='cs-transition cs-link'>Blog</Dropdown.Item>
-                                <Dropdown.Item href="#action/1.4" className='cs-transition cs-link'>Free tools</Dropdown.Item>
+                                <Dropdown.Item href="#action/1.1" className='cs-transition cs-link bg-transparent'>Examples</Dropdown.Item>
+                                <Dropdown.Item href="#action/1.2" className='cs-transition cs-link bg-transparent'>Creator stories</Dropdown.Item>
+                                <Dropdown.Item href="#action/1.3" className='cs-transition cs-link bg-transparent'>Blog</Dropdown.Item>
+                                <Dropdown.Item href="#action/1.4" className='cs-transition cs-link bg-transparent'>Free tools</Dropdown.Item>
                             </Dropdown.Menu>
                         </Dropdown>
                     </Nav>

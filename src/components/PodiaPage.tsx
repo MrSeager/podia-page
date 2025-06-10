@@ -14,9 +14,22 @@ import { Container } from 'react-bootstrap';
 import { useSpring, animated } from '@react-spring/web';
 
 const PodiaPage: FC = () => {
+
+    const bgStyle = useSpring({
+        from: { backgroundColor: "#fdfbf9" },
+        to: async (next) => {
+        while (true) {
+            await next({ backgroundColor: "#fdfbf9" });
+            await next({ backgroundColor: "#ffffff" });
+            await next({ backgroundColor: "#f5efeb" });
+        }
+        },
+        config: { duration: 3000 },
+    });
+
     return (
-        <Container fluid className='min-vh-100 px-0'>
-            <Container className='mt-5 pb-5 d-flex flex-column align-items-center gap-3'>
+        <animated.div style={bgStyle} className='container-fluid px-0 user-select-none pt-5'>
+            <Container className='pb-5 d-flex flex-column align-items-center gap-3'>
                 <PodiaNavbar />
                 <SectorOne />
                 <SectorTwo />
@@ -24,7 +37,7 @@ const PodiaPage: FC = () => {
                 <SectorFour />
             </Container>
             <SectorFooter />
-        </Container>
+        </animated.div>
     );
 }
 

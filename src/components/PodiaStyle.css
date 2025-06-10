@@ -51,6 +51,7 @@ body {
 
 .cs-btn:hover {
     background-color: #9484c6 !important;
+    scale: 1.05 !important;
 }
 
 .cs-link {
@@ -63,4 +64,5 @@ body {
 
 .cs-link:hover, .cs-link-two:hover {
     color: #4b2aad !important;
+    scale: 1.05 !important;
 }
