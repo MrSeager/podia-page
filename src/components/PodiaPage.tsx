@@ -12,20 +12,11 @@ import 'bootstrap/dist/css/bootstrap.css';
 import { Container } from 'react-bootstrap';
 //Spring
 import { useSpring, animated } from '@react-spring/web';
+import { useBgAnimation } from './springAnim.tsx';
 
 const PodiaPage: FC = () => {
 
-    const bgStyle = useSpring({
-        from: { backgroundColor: "#fdfbf9" },
-        to: async (next) => {
-        while (true) {
-            await next({ backgroundColor: "#fdfbf9" });
-            await next({ backgroundColor: "#ffffff" });
-            await next({ backgroundColor: "#f5efeb" });
-        }
-        },
-        config: { duration: 3000 },
-    });
+    const bgStyle = useBgAnimation();
 
     return (
         <animated.div style={bgStyle} className='container-fluid px-0 user-select-none pt-5'>
