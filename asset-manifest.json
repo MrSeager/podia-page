@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/podia-page/static/css/main.93ed8066.css",
+    "main.js": "/podia-page/static/js/main.e031521c.js",
+    "static/js/453.09c37aec.chunk.js": "/podia-page/static/js/453.09c37aec.chunk.js",
+    "static/media/pexels-ben-collins-41034267-7292641.jpg": "/podia-page/static/media/pexels-ben-collins-41034267-7292641.c50015a8f7840932f431.jpg",
+    "static/media/pexels-rdne-7092350.jpg": "/podia-page/static/media/pexels-rdne-7092350.dbb77912eca0faa51b55.jpg",
+    "static/media/pexels-drew-williams-1285451-3143813.jpg": "/podia-page/static/media/pexels-drew-williams-1285451-3143813.9b0ebbc1c84b615ad0eb.jpg",
+    "static/media/pexels-pixabay-207691.jpg": "/podia-page/static/media/pexels-pixabay-207691.2c4819680452b1c5c67c.jpg",
+    "static/media/pexels-pixabay-267350.jpg": "/podia-page/static/media/pexels-pixabay-267350.93322ab56cfa4d7ea22b.jpg",
+    "static/media/pexels-designecologist-1779487.jpg": "/podia-page/static/media/pexels-designecologist-1779487.df2f8d4ab5463ad6441d.jpg",
+    "static/media/pexels-knownasovan-57690.jpg": "/podia-page/static/media/pexels-knownasovan-57690.4aca60453ac86d6a70ab.jpg",
+    "static/media/pexels-polina-tankilevitch-4443160.jpg": "/podia-page/static/media/pexels-polina-tankilevitch-4443160.f9f7ac8e77c07fa5885f.jpg",
+    "static/media/pexels-teono123-no-18036-88476.jpg": "/podia-page/static/media/pexels-teono123-no-18036-88476.023158e42d2de4210562.jpg",
+    "static/media/free-photo-of-minimalist-setup-office.jpeg": "/podia-page/static/media/free-photo-of-minimalist-setup-office.57c16ea61ed1685b668c.jpeg",
+    "index.html": "/podia-page/index.html",
+    "main.93ed8066.css.map": "/podia-page/static/css/main.93ed8066.css.map",
+    "main.e031521c.js.map": "/podia-page/static/js/main.e031521c.js.map",
+    "453.09c37aec.chunk.js.map": "/podia-page/static/js/453.09c37aec.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.93ed8066.css",
+    "static/js/main.e031521c.js"
+  ]
+}
