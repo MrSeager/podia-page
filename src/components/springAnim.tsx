@@ -1,15 +1,20 @@
-import React from 'react';
+import { FC, Children } from 'react';
 import { useTrail, useSpring, a } from '@react-spring/web';
 
-export const Trail: React.FC<{ open: boolean; children: React.ReactNode }> = ({ open, children }) => {
-  const items = React.Children.toArray(children);
+export const Trail: FC<{ open: boolean; children: React.ReactNode, direct: number, del: number }> = ({ open, children, direct, del }) => {
+  const items = Children.toArray(children);
   const trail = useTrail(items.length, {
-    config: { mass: 25, tension: 2000, friction: 200 },
-    opacity: open ? 1 : 0,
+    config: { mass: 5, tension: 2000, friction: 200 },
     transform: open
-      ? 'translateX(0px) translateY(0px)'
-      : 'translateX(-30px) translateY(-50px)',
-    from: { opacity: 0, transform: 'translateX(-30px) translateY(-50px)' },
+      ? 'translateX(0px)'
+      : `translateX(${direct}px)`,
+    clipPath: open
+      ? 'inset(0% 0% 0% 0%)'
+      : 'inset(0% 0% 200% 0%)',
+    from: { 
+      transform: `translateX(${direct}px)`, 
+      clipPath: 'inset(0% 0% 200% 0%)' },
+    delay: del
   });
 
   return (
@@ -39,8 +44,14 @@ export const useBgAnimation = () => {
 
 export const useSlide = (inView: boolean, direct: number ) => {
     return useSpring({
-        from: { opacity: 0, scale: 0, transform: `translateX(${direct}px) translateY(-500px)` },
-        to: { opacity: inView ? 1 : 0, scale: inView ? 1 : 0, transform: inView ? 'translateX(0) translateY(0)' : `translateX(${direct}px) translateY(-500px)` },
-        config: { tension: 2000, friction: 200 },
+        from: { 
+          transform: `translateX(${direct}px)`,
+          clipPath: 'inset(0% 0% 200% 0%)'
+        },
+        to: { 
+          transform: inView ? 'translateX(0px)' : `translateX(${direct}px)`,
+          clipPath: inView ? 'inset(0% 0% 0% 0%)' : 'inset(0% 0% 200% 0%)'
+        },
+        config: { tension: 2000, friction: 300 },
     })
-}
+};

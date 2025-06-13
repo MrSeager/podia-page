@@ -1,4 +1,4 @@
-import React, { FC, useState } from 'react';
+import { FC } from 'react';
 //Bootstrap
 import { Container, Row, Col, Button, Image, Carousel } from 'react-bootstrap';
 //Spring
@@ -12,17 +12,15 @@ import ImgTwo from '../images/pexels-ben-collins-41034267-7292641.jpg';
 import ImgThree from '../images/pexels-drew-williams-1285451-3143813.jpg';
 import ImgFour from '../images/pexels-knownasovan-57690.jpg';
 
-
-
 const SectorOne: FC = () => {
-    const { ref, inView } = useInView({ triggerOnce: false, threshold: 0.2 })
-    const animSlide = useSlide(inView, 300);
+    const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.3 })
+    const animSlide = useSlide(inView, 500);
 
     return (
-        <Container className='mt-5' ref={ref}>
+        <Container className='mt-5 overflow-hidden' ref={ref}>
             <Row>
                 <Col lg={{ span: 6, order: 1 }} xs={{ span: 12, order: 2 }} className='d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center justify-content-between gap-3'>
-                    <Trail open={inView}>
+                    <Trail open={inView} direct={-200} del={0}>
                         <h1 className='h6 m-0 text-uppercase cs-tc-one fw-bold'>Digital products</h1>
                         <h2 className='m-0 display-4 fw-bold'>Sell online courses,
                         coaching sessions,
